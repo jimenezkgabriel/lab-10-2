@@ -24,6 +24,7 @@ export default function DebounceSearchDemo() {
 
   return (
     <Box sx={{ width: '100%' }}>
+      <Typography variant="h5" gutterBottom>Debounce Search Demo</Typography>
       <TextField
         label="Search"
         placeholder="Type to search..."

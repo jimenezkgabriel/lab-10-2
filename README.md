@@ -1,16 +1,9 @@
-# React + Vite
+I guess no need for reflections for this lab either.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Biggest challenge was implementing the right Material UI components and its props to get the satisfied UI results. Surprised that MUI had some elegant and simple pagination components for me to use.
 
-Currently, two official plugins are available:
+Next challenge was understanding the "shape" of a custom hook and how to implement the pagination. Lots of googling and AI to keep things simple. If I don't need to use a useEffect() then I won't unless the rubric requires me to.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Debounce was abstract to implement, figuring out using the useEffect with timeout and a cleanup return value.
 
-## React Compiler
-
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Overall, custom hooks compartmentalizes functions and other hooks which makes code a bit more readable when working on components
